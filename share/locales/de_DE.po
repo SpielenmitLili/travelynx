@@ -933,6 +933,12 @@ msgstr "Wagen"
 msgid "status.route"
 msgstr "Route"
 
+msgid "status.cancelled-stop"
+msgstr "entfällt"
+
+msgid "status.additional-stop"
+msgstr "Zusatzhalt"
+
 #, shown during destination selection
 msgid "status.undo"
 msgstr "Rückgängig"

@@ -289,7 +289,7 @@
 							<span>
 							%= include '_show_load_icons', station => $station
 							% if ($station->[2]{isCancelled}) {
-								entfällt
+								%= L('status.cancelled-stop')
 							% }
 							% elsif ($station->[2]{rt_arr} or $station->[2]{sched_arr}) {
 								%= ($station->[2]{rt_arr} || $station->[2]{sched_arr})->strftime('%H:%M')
@@ -298,7 +298,7 @@
 								(<%= ($station->[2]{rt_dep} || $station->[2]{sched_dep})->strftime('%H:%M') %>)
 							% }
 							% elsif ($station->[2]{isAdditional}) {
-								Zusatzhalt
+								%= L('status.additional-stop')
 							% }
 							</span>
 						</a>

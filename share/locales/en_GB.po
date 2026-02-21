@@ -930,6 +930,12 @@ msgstr "Carriages"
 msgid "status.route"
 msgstr "Route"
 
+msgid "status.cancelled-stop"
+msgstr "cancelled"
+
+msgid "status.additional-stop"
+msgstr "extra stop"
+
 #, shown during destination selection
 msgid "status.undo"
 msgstr "Undo"
