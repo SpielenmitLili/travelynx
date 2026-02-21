@@ -46,6 +46,43 @@ msgid "header.error"
 msgstr "Błąd"
 
 #
+# LT (localized duration)
+#
+
+msgid "LT.weeks"
+msgstr "tygodni"
+
+msgid "LT.week"
+msgstr "tydzień"
+
+msgid "LT.days"
+msgstr "dni"
+
+msgid "LT.day"
+msgstr "dzień"
+
+msgid "LT.hours"
+msgstr "godzin"
+
+msgid "LT.hour"
+msgstr "godzina"
+
+msgid "LT.minutes"
+msgstr "minut"
+
+msgid "LT.minute"
+msgstr "minuta"
+
+msgid "LT.zero-minutes"
+msgstr "0 minut"
+
+msgid "LT.final-and"
+msgstr " i"
+
+msgid "LT.and"
+msgstr " i"
+
+#
 # Templates
 #
 
@@ -223,6 +260,28 @@ msgstr "Poprawne obliczanie i wizualizacja trasy przejazdu dla linii okrężnych
 msgid "changelog.2-17.1"
 msgstr "Dane mapy („Polylines”) dla pojedynczych przejazdów można teraz eksportować i importować jako pliki GPX. Dzięki temu dane mapy można później poprawić lub uzupełnić. Format danych GPX jest kompatybilny z BRouter-Web."
 
+msgid "changelog.2-18.1"
+msgstr "Propozycje check-inów i połączen są znów dostępne dla backendów DBRIS, EFA i IRIS. W przypadku backendów HAFAS brakuje potrzebnych danych w tabeli odjazdów. W przypadku backendów MOTIS dane też mogą być niedostępne."
+
+msgid "changelog.2-18.2"
+msgstr "Przy obliczaniu tras podróży dla przejazdów z przeszłości uwzględniane są teraz również przejazdy z niewystarczającymi danymi (czyli te, dla których dostępna jest wyłącznie odległość w linii prostej). Do tej pory były one pomijane w statystykach miesięcznych i rocznych."
+
+msgid "changelog.2-19.1"
+msgstr "Sortowanie poprzednich przejazdów według opóźnienia lub czasu trwania. W razie możliwości dodane zostaną kolejne atrybuty."
+
+msgid "changelog.2-19.2"
+msgstr "Backend IRIS: Nieznaczna poprawa dostępności danych mapowych. Backend nadal jest wypowiedziany i może zostać wycofany w dowolnym momencie."
+
+# history.html.ep
+
+msgid "history.high-scores"
+msgstr "Według kryteriów"
+
+# history_by_year.html.ep
+
+msgid "history.review"
+msgstr "Podsumowanie"
+
 # journey.html.ep
 
 msgid "journey.not-found"
@@ -328,6 +387,9 @@ msgstr "!"
 
 msgid "landingpage.not-checked-in"
 msgstr "Nie jesteś obecnie zameldowany."
+
+msgid "landingpage.recent-stops"
+msgstr "Ostatnie cele podróży"
 
 msgid "landingpage.stop-geosearch"
 msgstr "Szukaj stacji w pobliżu"
@@ -462,6 +524,304 @@ msgstr "Po roku braku aktywności użytkownicy otrzymują wiadomość e-mail z i
 msgid "register.disclaimer"
 msgstr "Uwaga: Travelynx jest prywatnym projektem bez gwarancji dostępności. Niezapowiedziane przerwy w działaniu lub krótkoterminowe wyłączenie tej strony nie są planowane, ale są możliwe."
 
+# sorted_history.html.ep
+
+msgid "sorted-history.header"
+msgstr "Najlepsze wyniki"
+
+msgid "sorted-history.delay-dep"
+msgstr "Opóźnienie odjazdu"
+
+msgid "sorted-history.delay-arr"
+msgstr "Opóźnienie przy przyjeździe"
+
+msgid "sorted-history.sched-duration"
+msgstr "Planowany czas trwania"
+
+msgid "sorted-history.rt-duration"
+msgstr "Rzeczywisty czas trwania"
+
+msgid "sorted-history.desc"
+msgstr "Malejąco"
+
+msgid "sorted-history.asc"
+msgstr "Rosnąco"
+
+msgid "sorted-history.submit"
+msgstr "Wyświetl"
+
+msgid "sorted-history.date"
+msgstr "Data"
+
+msgid "sorted-history.trip"
+msgstr "Podróż"
+
+msgid "sorted-history.delay"
+msgstr "Opóźnienie"
+
+msgid "sorted-history.duration"
+msgstr "Czas"
+
+# year_in_review.html.ep
+
+msgid "review.header.pre"
+msgstr "Podsumowanie roku"
+
+msgid "review.header.post"
+msgstr " "
+
+msgid "review.trips-stops.pre"
+msgstr "W tym roku zarejestrowałeś w travelynx"
+
+msgid "review.trips-stops.mid"
+msgstr "podróży do i z"
+
+msgid "review.trips-stops.post"
+msgstr " stacji."
+
+msgid "review.trips"
+msgstr "przejazdy"
+
+msgid "review.stops"
+msgstr "stacje"
+
+msgid "review.trips-per-day.pre"
+msgstr "To więcej jak"
+
+msgid "review.trips-per-day"
+msgstr "przejazdów dziennie"
+
+msgid "review.trips-per-day.post"
+msgstr "!"
+
+msgid "review.travel-time.pre"
+msgstr "W sumie spędziłeś co minimum"
+
+msgid "review.travel-time.of-year"
+msgstr "roku"
+
+msgid "review.travel-time.post"
+msgstr "w podróży."
+
+msgid "review.travel-distance.pre"
+msgstr "W tym czasie przejechałeś około"
+
+msgid "review.travel-distance.post"
+msgstr "."
+
+msgid "review.equivalent-circumference.pre"
+msgstr "Odpowiada to"
+
+msgid "review.equivalent-circumference.mid"
+msgstr "podróżom dookoła Ziemi."
+
+msgid "review.equivalent-circumference.post"
+msgstr "."
+
+msgid "review.equivalent-diagonal.pre"
+msgstr "Odpowiada to"
+
+msgid "review.equivalent-diagonal.mid"
+msgstr "podróżom do środka Ziemi i z powrotem."
+
+msgid "review.equivalent-diagonal.post"
+msgstr "."
+
+msgid "review.next-page"
+msgstr "Przesuń tutaj lub kliknij poniżej, aby przejść do następnej strony."
+
+msgid "review.mean-trip.header"
+msgstr "Typowa podróż"
+
+msgid "review.mean-trip-3.pre"
+msgstr "… prowadziła cię"
+
+msgid "review.mean-trip-3.mid"
+msgstr "przez trójkąt"
+
+msgid "review.mean-trip-3.post"
+msgstr "."
+
+msgid "review.mean-trip-2.pre"
+msgstr "… zawsze znajdowała się na trasie między"
+
+msgid "review.mean-trip-2.mid"
+msgstr "i"
+
+msgid "review.mean-trip-2.post"
+msgstr "."
+
+msgid "review.time-distance.pre"
+msgstr "Średnio trwała ona"
+
+msgid "review.time-distance.mid"
+msgstr "na dystansie ok."
+
+msgid "review.time-distance.post"
+msgstr "."
+
+msgid "review.on-time"
+msgstr "Ponadto była <strong>całkowicie punktualna</strong>. Imponujące!"
+
+msgid "review.delay-decreasing.pre"
+msgstr "Odjeżdżała z"
+
+msgid "review.delay-decreasing.mid"
+msgstr "opóźnieniem, ale zdołała nadrobić jego część. Do celu dotarła już tylko"
+
+msgid "review.delay-decreasing.post"
+msgstr " później, niż przewidziano."
+
+msgid "review.delay-constant.pre"
+msgstr "Odjeżdżała z"
+
+msgid "review.delay-constant.post"
+msgstr " opóźnieniem i docierała do celu z tym samym opóźnieniem"
+
+msgid "review.delay-increasing.pre"
+msgstr "Odjechała z"
+
+msgid "review.delay-increasing.mid"
+msgstr "opóźnieniem i wlokła się do celu z prędkością"
+
+msgid "review.delay-increasing.post"
+msgstr "."
+
+msgid "review.high-scores.header"
+msgstr "Najlepsze wyniki"
+
+msgid "review.high-scores.with"
+msgstr "w"
+
+msgid "review.high-scores.from"
+msgstr "z"
+
+msgid "review.high-scores.to"
+msgstr "do"
+
+msgid "review.high-scores.longest-trip.link"
+msgstr "Najdłuższa podróż"
+
+msgid "review.high-scores.longest-trip.pre"
+msgstr " "
+
+msgid "review.high-scores.longest-trip.post"
+msgstr "."
+
+msgid "review.high-scores.farthest-trip-eq-longest.pre"
+msgstr "Dystans"
+
+msgid "review.high-scores.farthest-trip-eq-longest.post"
+msgstr " sprawił, że była to jednocześnie Twoja najdalsza podróż."
+
+msgid "review.high-scores.farthest-trip.link"
+msgstr "Najdalsza podróż"
+
+msgid "review.high-scores.farthest-trip.pre"
+msgstr " "
+
+msgid "review.high-scores.farthest-trip.post"
+msgstr "."
+
+msgid "review.high-scores.shortest-trip.link"
+msgstr "Najkrótsza podróż"
+
+msgid "review.high-scores.shortest-trip.pre"
+msgstr " "
+
+msgid "review.high-scores.shortest-trip.post"
+msgstr "."
+
+msgid "review.high-scores.closest-trip-eq-shortest.pre"
+msgstr "Zaledwie"
+
+msgid "review.high-scores.closest-trip-eq-shortest.post"
+msgstr " – to był Twój absolutnie najmniejszy rzut beretem."
+
+msgid "review.high-scores.farthest-trip.link"
+msgstr "Największa odległość"
+
+msgid "review.high-scores.closest-trip.link"
+msgstr "Najmniejszy rzut beretem"
+
+msgid "review.high-scores.closest-trip.pre"
+msgstr " "
+
+msgid "review.high-scores.closest-trip.post"
+msgstr "."
+
+msgid "review.annotated-percent.pre"
+msgstr " "
+
+msgid "review.annotated-percent.post"
+msgstr " wszystkich podróży zawierało informacje o opóźnieniach lub utrudnieniach."
+
+msgid "review.top-annotations"
+msgstr "Najczęściej występujące uwagi to:"
+
+msgid "review.punctual-percent.pre"
+msgstr "Zaledwie"
+
+msgid "review.punctual-percent.post"
+msgstr " przejazdów było punktualnych co do minuty."
+
+msgid "review.hour-delay-percent.pre"
+msgstr " "
+
+msgid "review.hour-delay-percent.post"
+msgstr " twoich przejazdów miało co najmniej godzinę opóźnienia,"
+
+msgid "review.and-cancelled-percent.pre"
+msgstr "a"
+
+msgid "review.and-cancelled-percent.post"
+msgstr " w ogóle nie dotarło do celu."
+
+msgid "review.cancelled-percent.pre"
+msgstr " "
+
+msgid "review.cancelled-percent.post"
+msgstr " zaplanowanych przez ciebie podróży nie odbyło się."
+
+msgid "review.most-delayed.pre"
+msgstr "Z opóźnieniem wynoszącym"
+
+msgid "review.most-delayed.mid"
+msgstr " podróż"
+
+msgid "review.most-delayed.post"
+msgstr " zanotowała największe opóźnienie."
+
+msgid "review.most-delay.pre"
+msgstr "Podróż"
+
+msgid "review.most-delay.from"
+msgstr "z"
+
+msgid "review.most-delay.to"
+msgstr "do"
+
+msgid "review.most-delay.mid"
+msgstr "była wyjątkowo niespieszna: trwała o"
+
+msgid "review.most-delay.post"
+msgstr " dłużej, niż planowano."
+
+msgid "review.most-undelay.pre"
+msgstr "W"
+
+msgid "review.most-undelay.from"
+msgstr "wyciśnięto natomiast maksimum z Vmax, dzięki czemu trasa z"
+
+msgid "review.most-undelay.to"
+msgstr "do"
+
+msgid "review.most-undelay.mid"
+msgstr "została pokonana o"
+
+msgid "review.most-undelay.post"
+msgstr " szybciej, niż przewidziano."
+
 # _checked_in.html.ep, _public_status_card.html.ep
 
 msgid "status.is-checked-in"
@@ -538,6 +898,21 @@ msgstr "Automatyczne wymeldowanie nastąpi najpóźniej pół godziny po przyje�
 
 msgid "status.realtime-unavailable"
 msgstr "Brak danych w czasie rzeczywistym"
+
+msgid "status.realtime-old.1"
+msgstr "Dane w czasie rzeczywistym zostały ostatnio zaktualizowane o"
+
+msgid "status.realtime-old.2"
+msgstr "(ponad"
+
+msgid "status.realtime-old.3"
+msgstr "minut temu)."
+
+msgid "status.realtime-old.cause-dbris"
+msgstr "Prawdopodobnie travelynx został zablokowany przez bahn.de."
+
+msgid "status.realtime-old.cause-others"
+msgstr "Być może elementy travelynx i/lub wykorzystywany backend uległy awarii."
 
 #, service messages related to the trip
 msgid "status.messages"
