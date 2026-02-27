@@ -42,6 +42,7 @@ sub get_departures_p {
 		name        => $opt{name},
 		datetime    => $when,
 		full_routes => 1,
+		num_results => 80,
 		cache       => $self->{realtime_cache},
 		promise     => 'Mojo::Promise',
 		user_agent  => $self->{user_agent}->request_timeout(5),
