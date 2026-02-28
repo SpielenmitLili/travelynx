@@ -1355,7 +1355,7 @@ sub get_travel_distance {
 	}
 	@{$route_ref};
 
-	if ( not defined $route_start and defined $route_end ) {
+	if ( not( defined $route_start and defined $route_end ) ) {
 		return ( 0, 0, $distance_beeline );
 	}
 
@@ -1383,6 +1383,10 @@ sub get_travel_distance {
 	$journey->{route_arr_index} = $route_end;
 
 	my @route = @{$route_ref}[ $route_start .. $route_end ];
+
+	if ( not @route ) {
+		return ( 0, 0, $distance_beeline );
+	}
 
 	# Just like the route, the polyline may contain the same stop more than
 	# once. So we need to select based on the seen counter.
