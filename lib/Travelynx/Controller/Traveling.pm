@@ -1484,6 +1484,7 @@ sub csv_history {
 		'scheduled arrival',
 		'real-time arrival',
 		'operator',
+		'operators',
 		'carriage type',
 		'comment',
 		'id'
@@ -1511,6 +1512,7 @@ sub csv_history {
 				$journey->{sched_arrival}->strftime('%Y-%m-%d %H:%M:%S'),
 				$journey->{rt_arrival}->strftime('%Y-%m-%d %H:%M:%S'),
 				$journey->{user_data}{operator} // q{},
+				join( q{ | }, @{ $journey->{user_data}{operators} // [] } ),
 				join( q{ + },
 					map { $_->{desc} // $_->{name} }
 					  @{ $journey->{user_data}{wagongroups} // [] } ),
