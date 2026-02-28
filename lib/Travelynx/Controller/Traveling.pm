@@ -144,7 +144,13 @@ sub geolocation {
 	my $lat        = $self->param('lat');
 	my $backend_id = $self->param('backend') // 0;
 
-	if ( not $lon or not $lat ) {
+	if (
+		not(    defined $lon
+			and defined $lat
+			and $lon =~ m{^ \d+ [.]? \d* $}x
+			and $lat =~ m{^ \d+ [.]? \d* $}x )
+	  )
+	{
 		$self->render(
 			json => { error => "Invalid lon/lat (${lon}/${lat}) received" } );
 		return;
