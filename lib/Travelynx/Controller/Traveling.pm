@@ -147,8 +147,8 @@ sub geolocation {
 	if (
 		not(    defined $lon
 			and defined $lat
-			and $lon =~ m{^ \d+ [.]? \d* $}x
-			and $lat =~ m{^ \d+ [.]? \d* $}x )
+			and $lon =~ m{^ -? \d+ [.e]? \d* $}x
+			and $lat =~ m{^ -? \d+ [.e]? \d* $}x )
 	  )
 	{
 		$self->render(
