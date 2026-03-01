@@ -839,6 +839,9 @@ msgstr "Teilen"
 msgid "status.check-out"
 msgstr "Auschecken"
 
+msgid "status.copy-checkin"
+msgstr "Mitfahren"
+
 #, noun or verb
 msgid "status.boarding-in.pre"
 msgstr "Einfahrt in"

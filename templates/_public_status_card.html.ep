@@ -294,6 +294,31 @@
 				</div>
 			% }
 		</div>
+		% if (is_user_authenticated() and not get_user_status()->{checked_in}) {
+			<div class="card-action" style="display: flex; justify-content: end">
+				<a class="blue-text action-checkin" style="margin-right: 0;"
+					% if ( $journey->{is_dbris} ) {
+						data-dbris="<%= $journey->{backend_name} %>"
+					% }
+					% elsif ( $journey->{is_efa} ) {
+						data-efa="<%= $journey->{backend_name} %>"
+					% }
+					% elsif ( $journey->{is_hafas} ) {
+						data-hafas="<%= $journey->{backend_name} %>"
+					% }
+					% elsif ( $journey->{is_motis} ) {
+						data-motis="<%= $journey->{backend_name} %>"
+					% }
+					data-station="<%= $journey->{dep_eva} %>"
+					data-dest="<%= $journey->{arr_eva} %>"
+					data-train="<%= $journey->{train_id} %>"
+					data-ts="<%= ( $journey->{sched_departure} // $journey->{real_departure} )->epoch %>"
+				>
+					<i class="material-icons left">send</i>
+					%= L('status.copy-checkin')
+				</a>
+			</div>
+		% }
 	</div>
 % }
 % else {
