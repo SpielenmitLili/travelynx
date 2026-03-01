@@ -32,7 +32,7 @@
 				% if ($train->{platform}) {
 					<span>Gleis <%= $train->{platform} %></span>
 				% }
-				<span class="dep-line <%= $train->{type} // q{} %>">
+				<span class="dep-line <%= trip_type_css_selector(($train->{line_no} // q{}) =~ s{ ^ \D+ \K \d .* $ }{}rx, ($train->{type} // q{}) =~ tr{a-zA-Z_-}{}cdr) %>">
 					%= $train->{line}
 				</span>
 			</span>

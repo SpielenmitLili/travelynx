@@ -277,6 +277,7 @@ sub grep_suggestions {
 						platform        => $dep->platform,
 						type            => $dep->type,
 						line            => $dep->line,
+						line_no         => $dep->{line_no},
 					};
 					push( @suggestions, [ $dep_json, $dest ] );
 					next destination;
