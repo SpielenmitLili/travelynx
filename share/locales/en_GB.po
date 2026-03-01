@@ -836,6 +836,9 @@ msgstr "Share"
 msgid "status.check-out"
 msgstr "check out"
 
+msgid "status.copy-checkin"
+msgstr "Join in"
+
 #, noun or verb
 msgid "status.boarding-in.pre"
 msgstr "arrives in"
