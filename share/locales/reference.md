@@ -2,9 +2,9 @@
 
 * de-DE: 100.0% complete (0 missing)
 * en-GB: 100.0% complete (0 missing)
-* fr-FR: 98.4% complete (5 missing)
-* hu-HU: 52.8% complete (146 missing)
-* pl-PL: 100.0% complete (0 missing)
+* fr-FR: 97.1% complete (9 missing)
+* hu-HU: 52.1% complete (150 missing)
+* pl-PL: 98.4% complete (5 missing)
 
 ### 
 
@@ -1316,7 +1316,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB: Our
 * fr-FR: Notre
 * hu-HU: Az
-* pl-PL: 
+* pl-PL *missing*
 
 ### register.privacy
 
@@ -1464,7 +1464,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB: in Review
 * fr-FR: en résumé
 * hu-HU *missing*
-* pl-PL: 
+* pl-PL:  
 
 ### review.trips-stops.pre
 
@@ -1488,7 +1488,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB: .
 * fr-FR: .
 * hu-HU *missing*
-* pl-PL: stacji.
+* pl-PL:  stacji.
 
 ### review.trips
 
@@ -1824,7 +1824,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  
 * fr-FR:  
 * hu-HU *missing*
-* pl-PL:
+* pl-PL:  
 
 ### review.high-scores.longest-trip.post
 
@@ -1856,7 +1856,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB: Longest Leap
 * fr-FR: Trajet le plus éloigné
 * hu-HU *missing*
-* pl-PL: Najdalsza podróż
+* pl-PL: Największa odległość
 
 ### review.high-scores.farthest-trip.pre
 
@@ -1864,7 +1864,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  
 * fr-FR:  
 * hu-HU *missing*
-* pl-PL: 
+* pl-PL:  
 
 ### review.high-scores.farthest-trip.post
 
@@ -1888,7 +1888,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  
 * fr-FR:  
 * hu-HU *missing*
-* pl-PL: 
+* pl-PL:  
 
 ### review.high-scores.shortest-trip.post
 
@@ -1936,7 +1936,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  
 * fr-FR:  
 * hu-HU *missing*
-* pl-PL: 
+* pl-PL:  
 
 ### review.high-scores.closest-trip.post
 
@@ -1952,7 +1952,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  
 * fr-FR:  
 * hu-HU *missing*
-* pl-PL: 
+* pl-PL:  
 
 ### review.annotated-percent.post
 
@@ -1960,7 +1960,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  of all trips came with remarks related to delays or disruptions.
 * fr-FR:  de tous les trajets avec des commentaires en lien avec des retards ou des annulations.
 * hu-HU *missing*
-* pl-PL: wszystkich podróży zawierało informacje o opóźnieniach lub utrudnieniach.
+* pl-PL:  wszystkich podróży zawierało informacje o opóźnieniach lub utrudnieniach.
 
 ### review.top-annotations
 
@@ -1992,7 +1992,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  
 * fr-FR:  
 * hu-HU *missing*
-* pl-PL: 
+* pl-PL:  
 
 ### review.hour-delay-percent.post
 
@@ -2000,7 +2000,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  of your trips were delayed by at least an hour
 * fr-FR:  de vos trajets étaient retardés d'au moins une heure
 * hu-HU *missing*
-* pl-PL: twoich przejazdów miało co najmniej godzinę opóźnienia,
+* pl-PL:  twoich przejazdów miało co najmniej godzinę opóźnienia,
 
 ### review.and-cancelled-percent.pre
 
@@ -2016,7 +2016,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  did not even make it to your destination.
 * fr-FR:  ne sont même pas arrivés à destination.
 * hu-HU *missing*
-* pl-PL: w ogóle nie dotarło do celu.
+* pl-PL:  w ogóle nie dotarło do celu.
 
 ### review.cancelled-percent.pre
 
@@ -2024,7 +2024,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  
 * fr-FR:  
 * hu-HU *missing*
-* pl-PL: 
+* pl-PL:  
 
 ### review.cancelled-percent.post
 
@@ -2032,7 +2032,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  of your trips were cancelled.
 * fr-FR:  de vos trajets ont été annulés.
 * hu-HU *missing*
-* pl-PL: zaplanowanych przez ciebie podróży nie odbyło się.
+* pl-PL:  zaplanowanych przez ciebie podróży nie odbyło się.
 
 ### review.most-delayed.pre
 
@@ -2088,7 +2088,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB: was super serene: it took
 * fr-FR: était très serein : il a pris
 * hu-HU *missing*
-* pl-PL: była wyjątkowo wolna: trwała o
+* pl-PL: była wyjątkowo niespieszna: trwała o
 
 ### review.most-delay.post
 
@@ -2136,7 +2136,7 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * en-GB:  faster than anticipated.
 * fr-FR:  de moins que prévu.
 * hu-HU *missing*
-* pl-PL: szybciej, niż przewidziano.
+* pl-PL:  szybciej, niż przewidziano.
 
 ## _checked_in.html.ep, _public_status_card.html.ep
 
@@ -2179,6 +2179,14 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * fr-FR: clôture
 * hu-HU: Kicsekkelés
 * pl-PL: Wymelduj się
+
+### status.copy-checkin
+
+* de-DE: Mitfahren
+* en-GB: Join in
+* fr-FR *missing*
+* hu-HU *missing*
+* pl-PL *missing*
 
 ### status.boarding-in.pre
 
@@ -2318,6 +2326,14 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * hu-HU: vágányra érkezik
 * pl-PL:  
 
+### status.arrival-time-unknown
+
+* de-DE: irgendwann
+* en-GB: eventually
+* fr-FR *missing*
+* hu-HU *missing*
+* pl-PL *missing*
+
 ### status.delayed-auto-checkout
 
 * de-DE: Der automatische Checkout erfolgt spätestens eine halbe Stunde nach der Ankunft.
@@ -2415,6 +2431,22 @@ Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 && (n<10 || n>=20) ? 1
 * fr-FR: Itinéraire
 * hu-HU: Útvonal
 * pl-PL: Trasa
+
+### status.cancelled-stop
+
+* de-DE: entfällt
+* en-GB: cancelled
+* fr-FR *missing*
+* hu-HU *missing*
+* pl-PL *missing*
+
+### status.additional-stop
+
+* de-DE: Zusatzhalt
+* en-GB: extra stop
+* fr-FR *missing*
+* hu-HU *missing*
+* pl-PL *missing*
 
 ### status.undo
 
