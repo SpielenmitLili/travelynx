@@ -1,7 +1,14 @@
 % if ($journey->{extra_data}{wagonorder_pride}) {
 	🏳️‍🌈
 % }
-<span class="dep-line <%= trip_type_css_selector(($journey->{train_type} // q{}) =~ tr{a-zA-Z_-}{}cdr, ($journey->{train_line} // q{}) =~ s{ ^ \D+ \K \d .* $ }{}rx) %>">
+% my $dep_class;
+% if ($journey->{is_dbris} or $journey->{is_iris}) {
+	% $dep_class = trip_type_css_selector(($journey->{train_line} // q{}) =~ s{ ^ \D+ \K \d .* $ }{}rx, ($journey->{train_type} // q{}) =~ tr{a-zA-Z_-}{}cdr);
+% }
+% else {
+	% $dep_class = trip_type_css_selector(($journey->{train_type} // q{}) =~ tr{a-zA-Z_-}{}cdr, ($journey->{train_line} // q{}) =~ s{ ^ \D+ \K \d .* $ }{}rx);
+% }
+<span class="dep-line <%= $dep_class %>">
 	% if (not $journey->{is_motis}) {
 		<%= $journey->{train_type} %>
 	% }
